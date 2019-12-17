@@ -133,7 +133,7 @@ output application/json
     </flow>
     <flow name="delete:\objectStore\remove:objectstore-connector-example-config">
         <os:clear doc:name="Clear" doc:id="9781594a-d0ec-49d3-8da6-58db48dc1425" objectStore="Object_store"/>
-		<ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+		<ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="477857e0-9ded-4c72-aa6b-b476a695a387">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
 output application/json
