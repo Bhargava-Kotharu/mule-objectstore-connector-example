@@ -1,0 +1,165 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ObjectStore-Example",
+		"_postman_id": "7a094c98-015f-ba11-fc6f-90e3b2459251",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Store",
+			"request": {
+				"url": "http://localhost:8081/api/objectStore",
+				"method": "POST",
+				"header": [
+					{
+						"key": "key",
+						"value": "name",
+						"description": ""
+					},
+					{
+						"key": "value",
+						"value": "Bhargava",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve by Key",
+			"request": {
+				"url": "http://localhost:8081/api/objectStore/retrieve/name",
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "name",
+						"description": ""
+					},
+					{
+						"key": "value",
+						"value": "Bhargava",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Contains by Key",
+			"request": {
+				"url": "http://localhost:8081/api/objectStore/contains/name",
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "name",
+						"description": ""
+					},
+					{
+						"key": "value",
+						"value": "Bhargava",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve All",
+			"request": {
+				"url": "http://localhost:8081/api/objectStore/retrieve",
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "name",
+						"description": ""
+					},
+					{
+						"key": "value",
+						"value": "Bhargava",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve All Keys",
+			"request": {
+				"url": "http://localhost:8081/api/objectStore/retrieve/keys",
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "name",
+						"description": ""
+					},
+					{
+						"key": "value",
+						"value": "Bhargava",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Clear All Keys",
+			"request": {
+				"url": "http://localhost:8081/api/objectStore/remove",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "key",
+						"value": "name",
+						"description": ""
+					},
+					{
+						"key": "value",
+						"value": "Bhargava",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remove by Key",
+			"request": {
+				"url": "http://localhost:8081/api/objectStore/remove/name",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "key",
+						"value": "name",
+						"description": ""
+					},
+					{
+						"key": "value",
+						"value": "Bhargava",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

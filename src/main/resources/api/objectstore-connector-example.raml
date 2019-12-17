@@ -1,0 +1,55 @@
+#%RAML 1.0
+version: V1
+title: objectstore-connector-example
+
+/objectStore:
+  post:
+    headers:
+      key: string
+      value: string
+    responses:
+      200:
+        body:
+          application/json:
+            example: {"Key stored successfully"}
+  /retrieve:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+    /{key}:
+      get:
+        responses:
+          200:
+           body:
+            application/json:
+    /keys:
+      get:
+        responses:
+          200:
+           body:
+            application/json:
+  /remove:
+    delete:
+        responses:
+          200:
+           body:
+            application/json: 
+              example: {"All keys Deleted successfully"}
+    /{key}:
+      delete:
+        responses:
+          200:
+           body:
+            application/json: 
+              example: {"Key Deleted successfully"}
+  /contains:
+    /{key}:
+      get:
+        responses:
+          200:
+           body:
+            application/json:
+              
+    
